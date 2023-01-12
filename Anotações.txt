@@ -1,0 +1,78 @@
+body {
+  /* = Para fazer um comentario
+background-image: url(./assets/background-mobile.jpg); # passar local do arquivo, imagem de fundo
+background-repeat: no-repeat; # Não repetir Imagem
+background-position: top center; # posicionar imagem no top do centro
+background-size: cover; # Expandir imagem para não haver bordas
+  */
+
+  /* Agrupar todos comandos acima, em uma unica linha*/
+  background: url(./assets/background-mobile.jpg) no-repeat top center/cover;
+}
+
+<div id="container0"></div> # ID não pode repetir, como se fosse um rg
+<div id="container1"></div> # Para repetir, identificar de formas diferentes, nunca igual, ex: 1,2,3 
+<div id="container2"></div>
+
+Para chamar o elemento do html identificado com ID, colocar # + nome
+#container {
+  width: 360px; # largura 
+  height: 712px; # Altura
+  border: 1px solid red; # borda solida, e cor
+  margin: auto; # Para centralizar a caixa ao meio - Auto - faz automatico
+}
+
+Elementos inline não fica centralizado,
+Elementos Block ocupam a largura da caixa inteira
+Exemplo:
+
+# Elemento pai:
+#profile {
+  text-align: center;
+}
+
+#profile img {
+  width: 112px;
+}
+
+#profile p {
+  font-weight: 500; # font-weight é o negrito, mais espesso, mais fino
+  line-height: 24px; # Altura da linha do texto
+}
+
+# Para tirar margens, espaçamentos pre definidos que o navegador dá
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 24px;
+  background: rgb(255, 255, 255, 0.1);
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  border-radius: 8px;
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: background 0.3s;
+}
+
+ul li a:hover {
+  background: rgb(255, 255, 255, 0.05);
+  border: 1.5px solid white;
+}
+
+# Houver adicionado para fazer transcição entre botoes, adiconar o transition + elemento e segundos
+
+# -webkit-backdrop-filter: blur(4px);
+-webkit para navegadores que talvez não suportem o 
+backdrop-filter: blur
+
+# Display-flex para ajustar botoes, e tudo +++
